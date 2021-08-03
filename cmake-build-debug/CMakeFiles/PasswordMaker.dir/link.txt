@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/PasswordMaker.dir/main.c.o  -o PasswordMaker 
