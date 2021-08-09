@@ -23,7 +23,7 @@ int main() {
     printf("%d, %d, %d, %d\n", cases, symbol, nums, length);
 
     char selection[77];
-
+    strcat(selection, upper);
     if (cases) {
         strcat(selection, lower);
     }
@@ -36,12 +36,11 @@ int main() {
         strcat(selection, numbers);
     }
 
-    strcat(selection, upper);
-
-    srand(time(0));
     char password[length];
     password[length] = '\0';
     int randlen = strlen(selection);
+    srand(time(0));
+
     for (int i = 0; i < length; ++i) {
         char temp = selection[rand() % randlen];
         password[i] = temp;
@@ -50,6 +49,3 @@ int main() {
     printf("%s\n", password);
     return 0;
 }
-//FAdhtNCmrRYn
-//FAdhtNCmrRYnsU
-//E8iMLZ5Zuz4h�U
